@@ -77,8 +77,26 @@
 
 * .container-fluid {
   position: relative;
-  width: 90%;
+  width: 1230px;
   margin: 0 auto;
+}
+
+@media (max-width: 1180px) {
+  * .container-fluid {
+    width: 1100px;
+  }
+}
+
+* .container-fluid-big {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1180px) {
+  * .container-fluid-big {
+    width: 1100px;
+  }
 }
 
 @-webkit-keyframes imgMove {
@@ -332,24 +350,14 @@ body .main-container .kv .kv-banner .Img {
 body .main-container .kv .kv-banner .Txt {
   position: absolute;
   top: 50%;
-  left: 50px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  left: 0;
   width: 100%;
-}
-
-@media (max-width: 991px) {
-  body .main-container .kv .kv-banner .Txt {
-    left: 0;
-  }
+  padding-left: 100px;
 }
 
 @media (max-width: 480px) {
   body .main-container .kv .kv-banner .Txt {
     top: 30%;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    left: 0;
   }
 }
 
@@ -489,9 +497,11 @@ body .main-container .laser .container-fluid .leftBox .laserTitleList_m .slick-c
   color: #2E8499;
 }
 
-body .main-container .laser .container-fluid .leftBox .slick-slider .slick-list .slick-track {
-  display: -webkit-box;
-  width: 100% !important;
+@media (max-width: 1440px) {
+  body .main-container .laser .container-fluid .leftBox .slick-slider .slick-list .slick-track {
+    display: -webkit-box;
+    width: 100% !important;
+  }
 }
 
 body .main-container .laser .container-fluid .leftBox .arrowBox {
@@ -1661,11 +1671,11 @@ body .main-container .experience::after {
   background: linear-gradient(180deg, #4AB8D1 0%, #00BE78 100%);
 }
 
-body .main-container .experience .container-fluid .experienceList .experienceItem {
+body .main-container .experience .container-fluid-big .experienceList .experienceItem {
   padding: 20px 10px;
 }
 
-body .main-container .experience .container-fluid .experienceList .experienceItem .item {
+body .main-container .experience .container-fluid-big .experienceList .experienceItem .item {
   position: relative;
   background-color: #fff;
   margin: auto;
@@ -1673,28 +1683,28 @@ body .main-container .experience .container-fluid .experienceList .experienceIte
           box-shadow: 0 2px 15px 0.9px rgba(4, 0, 0, 0.09);
 }
 
-body .main-container .experience .container-fluid .experienceList .experienceItem .item a {
+body .main-container .experience .container-fluid-big .experienceList .experienceItem .item a {
   display: block;
 }
 
-body .main-container .experience .container-fluid .experienceList .experienceItem .item a:hover .txtBox .Txt {
+body .main-container .experience .container-fluid-big .experienceList .experienceItem .item a:hover .txtBox .Txt {
   color: #2E8499;
 }
 
-body .main-container .experience .container-fluid .experienceList .experienceItem .item a:hover .txtBox .btnPlus {
+body .main-container .experience .container-fluid-big .experienceList .experienceItem .item a:hover .txtBox .btnPlus {
   background-color: #2E8499;
 }
 
-body .main-container .experience .container-fluid .experienceList .experienceItem .item a:hover .txtBox .btnPlus::before, body .main-container .experience .container-fluid .experienceList .experienceItem .item a:hover .txtBox .btnPlus::after {
+body .main-container .experience .container-fluid-big .experienceList .experienceItem .item a:hover .txtBox .btnPlus::before, body .main-container .experience .container-fluid-big .experienceList .experienceItem .item a:hover .txtBox .btnPlus::after {
   background-color: #fff;
 }
 
-body .main-container .experience .container-fluid .experienceList .experienceItem .item a:hover .Img img {
+body .main-container .experience .container-fluid-big .experienceList .experienceItem .item a:hover .Img img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-body .main-container .experience .container-fluid .experienceList .experienceItem .item a .txtBox {
+body .main-container .experience .container-fluid-big .experienceList .experienceItem .item a .txtBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1707,13 +1717,13 @@ body .main-container .experience .container-fluid .experienceList .experienceIte
           justify-content: space-between;
 }
 
-body .main-container .experience .container-fluid .experienceList .experienceItem .item a .txtBox .Txt {
+body .main-container .experience .container-fluid-big .experienceList .experienceItem .item a .txtBox .Txt {
   color: #1E322F;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
-body .main-container .experience .container-fluid .experienceList .experienceItem .item a .txtBox .btnPlus {
+body .main-container .experience .container-fluid-big .experienceList .experienceItem .item a .txtBox .btnPlus {
   width: 48px;
   height: 48px;
   border: 1px solid #2E8499;
@@ -1723,7 +1733,7 @@ body .main-container .experience .container-fluid .experienceList .experienceIte
   transition: all .5s ease-in-out;
 }
 
-body .main-container .experience .container-fluid .experienceList .experienceItem .item a .txtBox .btnPlus::before, body .main-container .experience .container-fluid .experienceList .experienceItem .item a .txtBox .btnPlus::after {
+body .main-container .experience .container-fluid-big .experienceList .experienceItem .item a .txtBox .btnPlus::before, body .main-container .experience .container-fluid-big .experienceList .experienceItem .item a .txtBox .btnPlus::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1736,22 +1746,22 @@ body .main-container .experience .container-fluid .experienceList .experienceIte
   transition: all .5s ease-in-out;
 }
 
-body .main-container .experience .container-fluid .experienceList .experienceItem .item a .txtBox .btnPlus::before {
+body .main-container .experience .container-fluid-big .experienceList .experienceItem .item a .txtBox .btnPlus::before {
   width: 18px;
   height: 1px;
 }
 
-body .main-container .experience .container-fluid .experienceList .experienceItem .item a .txtBox .btnPlus::after {
+body .main-container .experience .container-fluid-big .experienceList .experienceItem .item a .txtBox .btnPlus::after {
   width: 1px;
   height: 18px;
 }
 
-body .main-container .experience .container-fluid .experienceList .experienceItem .item a .Img {
+body .main-container .experience .container-fluid-big .experienceList .experienceItem .item a .Img {
   position: relative;
   overflow: hidden;
 }
 
-body .main-container .experience .container-fluid .experienceList .experienceItem .item a .Img img {
+body .main-container .experience .container-fluid-big .experienceList .experienceItem .item a .Img img {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   width: 100%;
@@ -1760,7 +1770,7 @@ body .main-container .experience .container-fluid .experienceList .experienceIte
 }
 
 @media (max-width: 1024px) {
-  body .main-container .experience .container-fluid .slick-slider .slick-list .slick-track {
+  body .main-container .experience .container-fluid-big .slick-slider .slick-list .slick-track {
     display: -webkit-box;
   }
 }
