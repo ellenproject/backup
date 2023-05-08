@@ -351,7 +351,6 @@ body .main-container .kv .kv-banner .Txt {
   position: absolute;
   top: 50%;
   left: 0;
-  width: 100%;
   padding-left: 100px;
 }
 
@@ -557,6 +556,9 @@ body .main-container .laser .container-fluid .rightBox .laserList .laserItem .it
           align-items: center;
   background-color: #fff;
   border-radius: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 1024px) {
