@@ -61,6 +61,16 @@
 * .fp-tableCell {
   display: block;
 }
+* .container-fluid {
+  position: relative;
+  width: 1230px;
+  margin: 0 auto;
+}
+@media (max-width: 1180px) {
+  * .container-fluid {
+    width: 1100px;
+  }
+}
 
 body {
   background-color: #212529;
