@@ -1,0 +1,202 @@
+*
+    margin: 0
+    padding: 0
+
+body
+    position: relative
+    min-height: 100%
+    margin: 0 2.5rem
+    top: 0px
+    line-height: 1.5em
+    font-family: 'Open Sans', sans-serif
+    .resumeWrapper
+        position: relative
+        .back
+            margin: 20px 0
+            .backIndex
+                text-decoration: none
+                color: #555555
+        .row
+            .profile
+                padding: 4rem 2rem
+                .title
+                    margin: 0 auto
+                    .headshot
+                        background: #f0f0f0
+                        width: 100px
+                        height: 100px
+                        border-radius: 50%
+                        border: 1px solid skyblue
+                        position: relative
+                        overflow: hidden
+                        img
+                            height: 100%
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            transform: translate(-50%, -50%)
+                    .name
+                        font-size: 2.3em
+                        color: #4a4a4a
+                        line-height: 1em
+                        padding: 0px 0
+                        margin-left: 20px
+                        small
+                            font-size: 1rem
+                .info
+                    margin-top: 100px
+                    font-size: 16px
+                    color: #4a4a4a
+                    .title
+                        font-weight: 600
+                        list-style: none
+                        li
+                            margin-bottom: 10px
+                    .content
+                        font-weight: 300
+                        list-style: none
+                        li
+                            margin-bottom: 10px
+                            a
+                                text-decoration: none
+                                color: #4a4a4a
+                                &:hover
+                                    color: #6a6a6a
+                .presentation
+                    margin: 50px 0
+                    font-weight: 300
+            .experience
+                background: #303030
+                padding: 4rem 2rem
+                .top
+                    .experienceTitle
+                        color: skyblue
+                        font-size: 1.2em
+                        margin-bottom: 20px
+                        font-weight: 400
+                    .experienceWrapper
+                        .company
+                            // background: #242424
+                            padding-right: 5%
+                            margin-bottom: 60px
+                            .companyName
+                                color: #fff
+                                margin-bottom: 10px
+                            .companyPeriod
+                                color: #555555
+                        .job
+                            // background: skyblue
+                            padding-right: 5%
+                            margin-bottom: 60px
+                            .jobName
+                                color: #fff
+                                margin-bottom: 10px
+                            .jobDescription
+                                color: #555555
+                
+                .bottom2
+                    margin-top: 50px
+                    .sectionskills-left
+                        padding: 0 50px 0 0
+                        .skillsTitle
+                            color: skyblue
+                            font-size: 1.2em
+                            margin-bottom: 20px
+                            font-weight: 400
+                            .fa-code
+                                color: #4a4a4a
+                        .percentbox
+                            list-style: none
+                            padding-left: 0px
+                            .percent
+                                margin-bottom: 10px
+                                position: relative
+                                color: #fff
+                                margin-bottom: 20px
+                                &::before
+                                    width: 80%
+                                    content: ""
+                                    height: 6px
+                                    background: skyblue
+                                    position: absolute
+                                    bottom: -5px
+                                    z-index: 99
+                                    display: block
+                                &::after
+                                    width: 100%
+                                    content: ""
+                                    height: 6px
+                                    background: #4a4a4a
+                                    position: absolute
+                                    bottom: -5px
+                                    display: block
+                    .sectionskills-right
+                        @media screen and ( max-width: 768px )
+                            margin-top: 50px
+                        .skillsTitle
+                            color: skyblue
+                            font-size: 1.2em
+                            margin-bottom: 20px
+                            font-weight: 400
+                            .fa-bezier-curve
+                                color: #4a4a4a
+                        .percentbox
+                            justify-content: space-between
+                            text-align: center
+                            list-style: none
+                            padding-left: 0px
+                            .percent
+                                padding: 0px
+                                position: relative
+                                svg
+                                    width: 95%
+                                    fill: transparent
+                                    transform: rotate(-90deg)
+                                    .fill
+                                        stroke-width: 6px
+                                        stroke: #4a4a4a
+                                    .cbar
+                                        stroke-dashoffset: 28.2743px
+                                        stroke-dasharray: 282.743px
+                                        transition-duration: 0.3s
+                                        stroke-width: 3px 
+                                        stroke: skyblue
+                                        stroke-linecap: round
+                                span
+                                    position: absolute
+                                    top: 50%
+                                    left: 50%
+                                    transform: translate(-50%, -50%)
+                                    width: 100%
+                                    transition-duration: 0.3s
+                                    color: #fff
+                                    font-size: 14px
+                        .graphicbox
+                            display: flex
+                            .skillsTitle
+                                color: skyblue
+                                font-size: 1.2em
+                                margin-bottom: 20px
+                                font-weight: 400
+                                .fa-layer-group
+                                    color: #4a4a4a
+                            .graphic
+                                width: 23%
+                                border: 1px solid skyblue
+                                margin: 0 2px
+                                color: #fff
+                                padding: 2px
+                                line-height: 1.5
+    .mask
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            background-color: pink
+            width: 100%
+            height: 100%
+            z-index: 50

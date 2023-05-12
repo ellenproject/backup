@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  margin: 0 2.5rem;
+  top: 0px;
+  line-height: 1.5em;
+  font-family: "Open Sans", sans-serif;
+}
+body .resumeWrapper {
+  position: relative;
+}
+body .resumeWrapper .back {
+  margin: 20px 0;
+}
+body .resumeWrapper .back .backIndex {
+  text-decoration: none;
+  color: #555555;
+}
+body .resumeWrapper .row .profile {
+  padding: 4rem 2rem;
+}
+body .resumeWrapper .row .profile .title {
+  margin: 0 auto;
+}
+body .resumeWrapper .row .profile .title .headshot {
+  background: #f0f0f0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid skyblue;
+  position: relative;
+  overflow: hidden;
+}
+body .resumeWrapper .row .profile .title .headshot img {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .resumeWrapper .row .profile .title .name {
+  font-size: 2.3em;
+  color: #4a4a4a;
+  line-height: 1em;
+  padding: 0px 0;
+  margin-left: 20px;
+}
+body .resumeWrapper .row .profile .title .name small {
+  font-size: 1rem;
+}
+body .resumeWrapper .row .profile .info {
+  margin-top: 100px;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+body .resumeWrapper .row .profile .info .title {
+  font-weight: 600;
+  list-style: none;
+}
+body .resumeWrapper .row .profile .info .title li {
+  margin-bottom: 10px;
+}
+body .resumeWrapper .row .profile .info .content {
+  font-weight: 300;
+  list-style: none;
+}
+body .resumeWrapper .row .profile .info .content li {
+  margin-bottom: 10px;
+}
+body .resumeWrapper .row .profile .info .content li a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+body .resumeWrapper .row .profile .info .content li a:hover {
+  color: #6a6a6a;
+}
+body .resumeWrapper .row .profile .presentation {
+  margin: 50px 0;
+  font-weight: 300;
+}
+body .resumeWrapper .row .experience {
+  background: #303030;
+  padding: 4rem 2rem;
+}
+body .resumeWrapper .row .experience .top .experienceTitle {
+  color: skyblue;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+body .resumeWrapper .row .experience .top .experienceWrapper .company {
+  padding-right: 5%;
+  margin-bottom: 60px;
+}
+body .resumeWrapper .row .experience .top .experienceWrapper .company .companyName {
+  color: #fff;
+  margin-bottom: 10px;
+}
+body .resumeWrapper .row .experience .top .experienceWrapper .company .companyPeriod {
+  color: #555555;
+}
+body .resumeWrapper .row .experience .top .experienceWrapper .job {
+  padding-right: 5%;
+  margin-bottom: 60px;
+}
+body .resumeWrapper .row .experience .top .experienceWrapper .job .jobName {
+  color: #fff;
+  margin-bottom: 10px;
+}
+body .resumeWrapper .row .experience .top .experienceWrapper .job .jobDescription {
+  color: #555555;
+}
+body .resumeWrapper .row .experience .bottom2 {
+  margin-top: 50px;
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-left {
+  padding: 0 50px 0 0;
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-left .skillsTitle {
+  color: skyblue;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-left .skillsTitle .fa-code {
+  color: #4a4a4a;
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-left .percentbox {
+  list-style: none;
+  padding-left: 0px;
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-left .percentbox .percent {
+  margin-bottom: 10px;
+  position: relative;
+  color: #fff;
+  margin-bottom: 20px;
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-left .percentbox .percent::before {
+  width: 80%;
+  content: "";
+  height: 6px;
+  background: skyblue;
+  position: absolute;
+  bottom: -5px;
+  z-index: 99;
+  display: block;
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-left .percentbox .percent::after {
+  width: 100%;
+  content: "";
+  height: 6px;
+  background: #4a4a4a;
+  position: absolute;
+  bottom: -5px;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  body .resumeWrapper .row .experience .bottom2 .sectionskills-right {
+    margin-top: 50px;
+  }
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-right .skillsTitle {
+  color: skyblue;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-right .skillsTitle .fa-bezier-curve {
+  color: #4a4a4a;
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-right .percentbox {
+  justify-content: space-between;
+  text-align: center;
+  list-style: none;
+  padding-left: 0px;
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-right .percentbox .percent {
+  padding: 0px;
+  position: relative;
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-right .percentbox .percent svg {
+  width: 95%;
+  fill: transparent;
+  transform: rotate(-90deg);
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-right .percentbox .percent svg .fill {
+  stroke-width: 6px;
+  stroke: #4a4a4a;
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-right .percentbox .percent svg .cbar {
+  stroke-dashoffset: 28.2743px;
+  stroke-dasharray: 282.743px;
+  transition-duration: 0.3s;
+  stroke-width: 3px;
+  stroke: skyblue;
+  stroke-linecap: round;
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-right .percentbox .percent span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  transition-duration: 0.3s;
+  color: #fff;
+  font-size: 14px;
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-right .graphicbox {
+  display: flex;
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-right .graphicbox .skillsTitle {
+  color: skyblue;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-right .graphicbox .skillsTitle .fa-layer-group {
+  color: #4a4a4a;
+}
+body .resumeWrapper .row .experience .bottom2 .sectionskills-right .graphicbox .graphic {
+  width: 23%;
+  border: 1px solid skyblue;
+  margin: 0 2px;
+  color: #fff;
+  padding: 2px;
+  line-height: 1.5;
+}
+body .mask {
+  position: relative;
+}
+body .mask::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: pink;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}/*# sourceMappingURL=resume.css.map */
