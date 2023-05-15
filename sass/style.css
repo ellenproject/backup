@@ -1,0 +1,155 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+* .text-8xl {
+  font-size: clamp(48px, 6.7vw, 96px);
+  line-height: 1;
+}
+* .text-7xl {
+  font-size: clamp(36px, 5vw, 72px);
+  line-height: 1;
+}
+* .text-6xl {
+  font-size: clamp(30px, 4.2vw, 60px);
+  line-height: 1;
+}
+* .text-5xl {
+  font-size: clamp(22px, 3.3vw, 48px);
+  line-height: 1;
+}
+* .text-4xl {
+  font-size: clamp(20px, 2.5vw, 36px);
+  line-height: 2.5rem;
+}
+* .text-3xl {
+  font-size: clamp(18px, 2vw, 30px);
+  line-height: 2.25rem;
+  font-weight: 600;
+}
+* .text-2xl {
+  font-size: clamp(16px, 1.7vw, 22px);
+  line-height: 2rem;
+  font-weight: 400;
+}
+* .text-xl {
+  font-size: clamp(16px, 1.4vw, 20px);
+  line-height: 1.75rem;
+  font-weight: 400;
+}
+* .text-lg {
+  font-size: clamp(16px, 1.25vw, 18px);
+  line-height: 1.75rem;
+  font-weight: 400;
+}
+* .text-base {
+  font-size: clamp(16px, 1vw, 16px);
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+* a {
+  text-decoration: none;
+}
+* ul {
+  list-style: none;
+}
+* .fp-tableCell {
+  display: block;
+}
+* .container-fluid {
+  position: relative;
+  width: 1230px;
+  margin: 0 auto;
+}
+@media (max-width: 1180px) {
+  * .container-fluid {
+    width: 1100px;
+  }
+}
+
+body {
+  background-color: #212529;
+  font-family: "Noto Sans TC", sans-serif;
+  position: relative;
+}
+body .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+body .my-container {
+  position: relative;
+  padding-top: 64px;
+}
+body .my-container .works {
+  margin: 0 auto;
+}
+body .my-container .works .col-sm-12 {
+  margin: 30px auto;
+}
+@media (max-width: 768px) {
+  body .my-container .works .col-sm-12 {
+    margin: 24px auto;
+  }
+}
+@media (max-width: 480px) {
+  body .my-container .works .col-sm-12 {
+    margin: 18px auto;
+  }
+}
+body .my-container .works .col-sm-12 .thumbnail {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.15);
+}
+body .my-container .works .col-sm-12 .thumbnail:hover .Img img {
+  transform: scale(1.1);
+}
+body .my-container .works .col-sm-12 .thumbnail:hover .Img::before {
+  opacity: 0.8;
+}
+body .my-container .works .col-sm-12 .thumbnail:hover .Txt {
+  transform: translate(-50%, 0);
+}
+body .my-container .works .col-sm-12 .thumbnail .Img {
+  position: relative;
+  z-index: 1;
+}
+body .my-container .works .col-sm-12 .thumbnail .Img img {
+  position: relative;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+body .my-container .works .col-sm-12 .thumbnail .Img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  z-index: 2;
+}
+body .my-container .works .col-sm-12 .thumbnail .Txt {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  color: #fff;
+  z-index: 5;
+  width: 100%;
+  background-color: #212529;
+  display: inline-block;
+  transition: all 0.5s linear;
+}/*# sourceMappingURL=style.css.map */
