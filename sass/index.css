@@ -109,6 +109,8 @@ body .my-container .works .col-sm-12 .thumbnail {
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 100%;
 }
 body .my-container .works .col-sm-12 .thumbnail:hover .Img img {
   transform: scale(1.1);
